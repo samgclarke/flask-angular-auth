@@ -1,0 +1,5 @@
+<div ng-controller="ProjectsCtrl as pjs">Projects: {{ pjs.projects }}
+  <div ng-repeat="p in pjs.projects track by $index">
+    {{ p.title }} - {{ p.owner }}
+  </div>
+</div>
